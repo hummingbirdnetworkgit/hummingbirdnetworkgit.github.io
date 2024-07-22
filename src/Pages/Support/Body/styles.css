@@ -1,0 +1,134 @@
+.web-support-body{
+    width: 100%;
+    position: relative;
+    font-family: 'Inter';
+}
+
+.support-questions{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.support-question{
+    width: 18%;
+    border: 0.6px solid rgba(188, 188, 188, 1);
+    margin-left: 1%;
+    margin-right: 1%;
+    color: rgba(188, 188, 188, 1);
+    font-family: "Inter";
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.support-question-title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.support-question-text{
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+.support-question-desc{
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.float-text-p{
+    color: rgba(188, 188, 188, 1);
+}
+
+.support-content{
+    position: relative;
+}
+
+.support-content-bg{
+    width: 100%;
+}
+
+.support-content-contact{
+    width: 100%;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.support-content-holder{
+    width: 38%;
+    left: 49%;
+    transform: translateX(-50%);
+    top: 12%;
+    position: absolute;
+    mix-blend-mode: hard-light;
+    height: 33%;
+}
+
+.support-content-logo{
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    width: 25%;
+    z-index: 2;
+}
+
+.support-input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: darkgray;
+    background-color: transparent;
+    color: rgba(188, 188, 188, 1);
+    width: 72%;
+}
+
+.support-input::placeholder {
+    color: rgba(188, 188, 188, 1);
+}
+
+#support-name{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+#support-email{
+    position: absolute;
+    top: 37%;
+    left: 15%;
+}
+
+#support-message{
+    position: absolute;
+    top: 49%;
+    left: 15%;
+}
+
+.support-button{
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    font-weight: 500;
+    color: lightgray;
+    left: 68%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.support-button-text{
+    margin-right: 7px;
+}
+
+.support-button-img{
+    height: 26px;
+    transform: rotate(-90deg);
+}

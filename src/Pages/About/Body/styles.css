@@ -1,0 +1,29 @@
+.web-about-body{
+    width: 100%;
+    position: relative;
+    font-family: 'Inter';
+}
+
+.about-first{
+    position: relative;
+}
+
+.about-logo{
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.about-people{
+    position: absolute;
+    width: 35%;
+    bottom: -4%;
+    right: 5%;
+}
+
+.about-floor{
+    position: relative;
+    margin-top: -6px;
+}

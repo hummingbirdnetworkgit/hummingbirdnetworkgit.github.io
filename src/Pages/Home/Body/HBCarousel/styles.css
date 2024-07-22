@@ -1,0 +1,27 @@
+.web-carousel{
+    height: 100vh;
+}
+
+.carousel-container{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 55%;
+}
+
+.carousel-logo-container{
+    top: 41%;
+    transform: translateY(-50%);
+    mix-blend-mode: difference;
+}
+
+.carousel-logo-img{
+    mix-blend-mode: difference;
+}
+
+.css-1fzpoyk{
+    min-width: 70%;
+    background-color: black;
+}
