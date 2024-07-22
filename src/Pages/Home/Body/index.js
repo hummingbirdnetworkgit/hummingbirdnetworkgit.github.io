@@ -15,26 +15,12 @@ const Body = () => {
                 </div>
                 <div className="row mb-5">
                     <div className="col-2"></div>
-                    <div className="col-4">
-                        <img className="web-partner-img" src="/img/partner/partner1.png" />
+                    <div className="col-4 d-flex justify-content-center align-items-center">
+                        <img className="web-partner-img" src="/img/tcrlogo.png" />
                     </div>
                     <div className="col-2"></div>
                     <div className="col-4">
-                        <img className="web-partner-img" src="/img/partner/partner1.png" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-1"></div>
-                    <div className="col-3">
-                        <img className="web-partner-img" src="/img/partner/partner1.png" />
-                    </div>
-                    <div className="col-1"></div>
-                    <div className="col-3">
-                        <img className="web-partner-img" src="/img/partner/partner1.png" />
-                    </div>
-                    <div className="col-1"></div>
-                    <div className="col-3">
-                        <img className="web-partner-img" src="/img/partner/partner1.png" />
+                        <img className="web-partner-img" src="/img/musewavlogo.png" />
                     </div>
                 </div>
             </div>
