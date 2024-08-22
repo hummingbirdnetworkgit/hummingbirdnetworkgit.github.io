@@ -54,3 +54,21 @@
     color: rgba(188, 188, 188, 1);
     font-size: 1.5vw;
 }
+
+@media only screen and (max-width: 600px) {
+    .web-header-logo-img{
+        width: 16vw !important;
+    }
+
+    .web-header-menu-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .web-header-menu-link{
+        font-size: 2.5vw !important;
+    }
+}
+  

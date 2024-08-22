@@ -94,6 +94,7 @@
     font-size: 2vw;
     font-weight: 900;
     cursor: pointer;
+    bottom: -30px;
 }
 
 .project-item-name-right{
@@ -102,6 +103,7 @@
     font-size: 2vw;
     font-weight: 900;
     cursor: pointer;
+    bottom: -30px;
 }
 
 .project-item-image-bg-right{
@@ -162,3 +164,36 @@
     }
     to { opacity: 1 }
 }
+
+@media only screen and (max-width: 600px) {
+    .web-project-body-menu{
+        font-size: 20px;
+    }
+
+    .project-item{
+        width: 100vw;
+    }
+
+    .project-item-text-left{
+        width: 30vw;
+        font-size: 12px;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    .project-item-text-right{
+        width: 30vw;
+        font-size: 12px;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    .project-item-title{
+        font-size: 14px;
+    }
+
+    .project-list{
+        padding-bottom: 100px;
+    }
+  }
+  

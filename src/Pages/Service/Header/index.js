@@ -10,19 +10,19 @@ const Header = () => {
             </div>
             <div className="web-header-menu">
                 <div className="web-header-menu-item">
-                    <Link className="web-header-menu-link" to="/project">Project.</Link>
+                    <Link className="web-header-menu-link" to="/project">Project</Link>
                 </div>
                 <div className="web-header-menu-item">
-                    <Link className="web-header-menu-link" to="/service">Service.</Link>
+                    <Link className="web-header-menu-link" to="/service">Service</Link>
                 </div>
                 <div className="web-header-menu-item">
-                    <Link className="web-header-menu-link" to="/shop">Shop.</Link>
+                    <Link className="web-header-menu-link" to="/shop">Shop</Link>
                 </div>
                 <div className="web-header-menu-item">
-                    <Link className="web-header-menu-link" to="/support">Support.</Link>
+                    <Link className="web-header-menu-link" to="/support">Support</Link>
                 </div>
                 <div className="web-header-menu-item">
-                    <Link className="web-header-menu-link" to="/about">About.</Link>
+                    <Link className="web-header-menu-link" to="/about">About</Link>
                 </div>
             </div>
         </div>

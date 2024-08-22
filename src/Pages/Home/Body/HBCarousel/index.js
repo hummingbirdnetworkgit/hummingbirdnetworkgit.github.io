@@ -24,12 +24,16 @@ const HBCarousel = () =>{
         {
           key: uuid(),
           content: <img src="/img/carousel/005.jpg" alt="5" />
+        },
+        {
+          key: uuid(),
+          content: <img src="/img/carousel/006.jpg" alt="6" />
         }
       ];
 
     return (
-        <div className="web-carousel position-relative">
-            <div className="web-carousel-bg position-absolute top-0 left-0">
+        <div className="web-carousel position-relative w-100">
+            <div className="web-carousel-bg w-100">
                 <img className="web-carousel-bg-img h-100 w-100" src="/img/homebg1.png" />
             </div>
             <div className="carousel-container">

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Footer from "./Footer";
+import { isMobile } from "react-device-detect";
 
 const Body = () => {
     const currentContent = [
         {
             name: "Hummingbird Showcase",
             title: "Freestyle Series",
-            desc: 'We are proud to present the "Hummingbird Showcase," a unique and dynamic project dedicated to spotlighting the best upcoming artists from all around the world.',
+            desc: 'A unique and dynamic project dedicated to spotlight the best artists.',
             type: "RECORDING",
             image: "/img/projects/project1.png",
             videoUrl: "https://www.youtube.com/embed/videoseries?si=BZbhHEZ5Yx_FV5kC&amp;list=PLuquG6ioTM99KTAyhThOYwDwS6KwVXVcb"
@@ -15,17 +16,17 @@ const Body = () => {
         {
             name: "Hummingbird Interviews",
             title: "Interview Series",
-            desc: 'an engaging interview series dedicated to exploring the minds and works of the most promising upcoming artists from around the globe.',
+            desc: 'Exploring the minds and works of the people from around the globe.',
             type: "INTERVIEW",
-            image: "/img/projects/project1.png",
+            image: "/img/projects/interview.jpg",
             videoUrl: "https://www.youtube.com/embed/fxVCvOMKY3U?si=Cx31p0Y8G9zgV-6J"
         },
         {
             name: "Music Video",
             title: "SOUNDMAKER - Take Me Where You Wanna Official MV (Dir. Alex Night)",
-            desc: "we offer premier music video production services tailored to bring your artistic vision to life.",
+            desc: "Premier music video production services.",
             type: "MUSIC",
-            image: "/img/projects/project1.png",
+            image: "/img/projects/alex_head.png",
             videoUrl: "https://www.youtube.com/embed/XFXltA5UD6E?si=Gyhk3jjCsnfiKLJG"
         }
     ]
@@ -38,7 +39,7 @@ const Body = () => {
             case 'ALL':
                 return (<div className="project-list">
                     {currentContent.map((obj, idx) => {
-                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: '12vw'}}>
+                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: isMobile ? '30vw' : '12vw'}}>
                             <div className="project-item-text-left">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -50,7 +51,7 @@ const Body = () => {
                                     <span className="project-item-name" onClick={()=>setSelectedItem(obj)}>{obj.name}</span>
                                 </div>
                             </div>
-                        </div> : <div className="project-item" style={{paddingRight: '12vw', marginLeft: 'auto'}}>
+                        </div> : <div className="project-item" style={{paddingRight: isMobile ? '30vw' : '12vw', marginLeft: 'auto'}}>
                             <div className="project-item-text-right">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -69,7 +70,7 @@ const Body = () => {
                 const interviews = currentContent.filter((content)=>content.type==="INTERVIEW");
                 return (<div className="project-list">
                     {interviews.map((obj, idx) => {
-                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: '12vw'}}>
+                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: isMobile ? '30vw' : '12vw'}}>
                             <div className="project-item-text-left">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -81,7 +82,7 @@ const Body = () => {
                                     <span className="project-item-name" onClick={()=>setSelectedItem(obj)}>{obj.name}</span>
                                 </div>
                             </div>
-                        </div> : <div className="project-item" style={{paddingRight: '12vw', marginLeft: 'auto'}}>
+                        </div> : <div className="project-item" style={{paddingRight: isMobile ? '30vw' : '12vw', marginLeft: 'auto'}}>
                             <div className="project-item-text-right">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -100,7 +101,7 @@ const Body = () => {
                 const recordings = currentContent.filter((content)=>content.type==="RECORDING");
                 return (<div className="project-list">
                     {recordings.map((obj, idx) => {
-                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: '12vw'}}>
+                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: isMobile ? '30vw' : '12vw'}}>
                             <div className="project-item-text-left">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -112,7 +113,7 @@ const Body = () => {
                                     <span className="project-item-name" onClick={()=>setSelectedItem(obj)}>{obj.name}</span>
                                 </div>
                             </div>
-                        </div> : <div className="project-item" style={{paddingRight: '12vw', marginLeft: 'auto'}}>
+                        </div> : <div className="project-item" style={{paddingRight: isMobile ? '30vw' : '12vw', marginLeft: 'auto'}}>
                             <div className="project-item-text-right">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -131,7 +132,7 @@ const Body = () => {
                 const mvs = currentContent.filter((content)=>content.type==="MUSIC");
                 return (<div className="project-list">
                     {mvs.map((obj, idx) => {
-                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: '12vw'}}>
+                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: isMobile ? '30vw' : '12vw'}}>
                             <div className="project-item-text-left">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -143,7 +144,7 @@ const Body = () => {
                                     <span className="project-item-name" onClick={()=>setSelectedItem(obj)}>{obj.name}</span>
                                 </div>
                             </div>
-                        </div> : <div className="project-item" style={{paddingRight: '12vw', marginLeft: 'auto'}}>
+                        </div> : <div className="project-item" style={{paddingRight: isMobile ? '30vw' : '12vw', marginLeft: 'auto'}}>
                             <div className="project-item-text-right">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -161,7 +162,7 @@ const Body = () => {
             default:
                 return (<div className="project-list">
                     {currentContent.map((obj, idx) => {
-                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: '12vw'}}>
+                        return (idx % 2 == 0 ? <div className="project-item" style={{paddingLeft: isMobile ? '30vw' : '12vw'}}>
                             <div className="project-item-text-left">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>
@@ -173,7 +174,7 @@ const Body = () => {
                                     <span className="project-item-name" onClick={()=>setSelectedItem(obj)}>{obj.name}</span>
                                 </div>
                             </div>
-                        </div> : <div className="project-item" style={{paddingRight: '12vw', marginLeft: 'auto'}}>
+                        </div> : <div className="project-item" style={{paddingRight: isMobile ? '30vw' : '12vw', marginLeft: 'auto'}}>
                             <div className="project-item-text-right">
                                 <p className="project-item-title">{obj.title}</p>
                                 <p className="project-item-desc">{obj.desc}</p>

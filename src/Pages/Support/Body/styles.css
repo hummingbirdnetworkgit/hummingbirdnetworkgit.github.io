@@ -2,6 +2,7 @@
     width: 100%;
     position: relative;
     font-family: 'Inter';
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .support-questions{
@@ -132,3 +133,31 @@
     height: 26px;
     transform: rotate(-90deg);
 }
+
+@media only screen and (max-width: 600px) {
+    .support-questions{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .support-question{
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #bcbcbc !important;
+    }
+
+    .support-input{
+        font-size: 8px;
+    }
+
+    .support-button{
+        font-size: 8px;
+    }
+
+    .support-button-img{
+        height: 12px;
+    }
+}
+  

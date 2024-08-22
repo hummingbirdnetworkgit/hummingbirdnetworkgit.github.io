@@ -8,7 +8,7 @@ const Body = () => {
         var name = document.getElementById("support-name").value;
         var email = document.getElementById("support-email").value;
         var message = document.getElementById("support-message").value;
-        window.location.href = 'mailto:mail@hummingbird.com?subject=The subject - ' + name + ' (' + email + ')' + '&body=' + message;
+        window.location.href = 'mailto:info@thehummingbird.network?subject=The subject - ' + name + ' (' + email + ')' + '&body=' + message;
     };
 
     return (

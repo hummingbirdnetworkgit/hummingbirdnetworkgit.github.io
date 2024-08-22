@@ -19,11 +19,9 @@
 }
 
 .web-partner-title-a{
-    border-bottom: 2px solid rgba(188, 188, 188, 1);;
 }
 
 .web-partner-title-b{
-    font-style: italic;
 }
 
 .web-partner-img{
@@ -52,3 +50,15 @@
     text-align: center;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .css-1qzevvg{
+        width: 40% !important;
+    }
+
+    .slide-show{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+  
