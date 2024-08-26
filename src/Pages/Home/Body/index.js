@@ -22,7 +22,7 @@ const Body = () => {
                     </div>
                     <div className="col-2"></div>
                     <div className="col-4">
-                        <img className="web-partner-img" src="/img/musewavlogo.png" />
+                        <img className="web-partner-img" src="/img/musewavlg.png" />
                     </div>
                     <div className="col-1"></div>
                 </div> : <div className="row mb-2">
@@ -32,7 +32,7 @@ const Body = () => {
                     </div>
                     <div className="col-12"></div>
                     <div className="col-12 text-center">
-                        <img className="web-partner-img" src="/img/musewavlogo.png" />
+                        <img className="web-partner-img" src="/img/musewavlg.png" />
                     </div>
                 </div>
                 }
