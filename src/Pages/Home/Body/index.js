@@ -16,20 +16,10 @@ const Body = () => {
                 </div>
                 {
                     !isMobile ? <div className="row mb-5">
-                    <div className="col-1"></div>
-                    <div className="col-4 d-flex justify-content-center align-items-center">
-                        <img className="web-partner-img" src="/img/tcrlogo.png" />
-                    </div>
-                    <div className="col-2"></div>
-                    <div className="col-4">
+                    <div className="col-12 text-center">
                         <img className="web-partner-img" src="/img/musewavlg.png" />
                     </div>
-                    <div className="col-1"></div>
                 </div> : <div className="row mb-2">
-                    <div className="col-12"></div>
-                    <div className="col-12 d-flex justify-content-center align-items-center">
-                        <img className="web-partner-img" src="/img/tcrlogo.png" />
-                    </div>
                     <div className="col-12"></div>
                     <div className="col-12 text-center">
                         <img className="web-partner-img" src="/img/musewavlg.png" />
